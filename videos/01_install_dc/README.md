@@ -50,17 +50,9 @@ ACTIVE DIRECTORY #00 Creating our Server + Workstation Virtual Environment - You
 
     - Changing DNS Client Server Address
 
-        \\*Check Net IP Address*\\
+        \\*Type `GET-NetIPAddress -IPAddress 192.168.135.129` to check Net IP Address*\\
 
-        ```shell
-        GET-NetIPAddress -IPAddress 192.168.135.129
-        ```
-
-        \\*Check DNS Server Address*\\
-
-        ```shell
-        Get-DNSClientServerAddress
-        ```
+        \\* To check DNS Server Address, type `Get-DNSClientServerAddress`*\\
 
         ```shell
         Set-DNSClientServerAddress -InterfaceIndex 3 -ServerAddress 192.168.135.129
