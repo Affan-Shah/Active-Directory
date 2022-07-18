@@ -48,23 +48,23 @@ ACTIVE DIRECTORY #00 Creating our Server + Workstation Virtual Environment - You
     Install-ADDSForest
     ```
 
-    Changing DNS Client Server Address
+    - Changing DNS Client Server Address
 
-     \\*Check Net IP Address*\\
+        \\*Check Net IP Address*\\
 
-     ```shell
-     GET-NetIPAddress -IPAddress 192.168.135.129
-     ```
+        ```shell
+        GET-NetIPAddress -IPAddress 192.168.135.129
+        ```
 
-     \\*Check DNS Server Address*\\
+        \\*Check DNS Server Address*\\
 
-     ```shell
-     Get-DNSClientServerAddress
-     ```
+        ```shell
+        Get-DNSClientServerAddress
+        ```
 
-    ```shell
-    Set-DNSClientServerAddress -InterfaceIndex 3 -ServerAddress 192.168.135.129
-    ```
+        ```shell
+        Set-DNSClientServerAddress -InterfaceIndex 3 -ServerAddress 192.168.135.129
+        ```
 
 7. Adding Workstation to the Domain
 
